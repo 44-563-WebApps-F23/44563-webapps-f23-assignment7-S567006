@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="ui container">
-  <h3>Tarun Yada Speed Check</h3>
+  <h3>Rachana sri Speed Check</h3>
 
   <div id="target">
     Your time:
@@ -47,6 +47,7 @@ function recordTime()
 }
 document.getElementById("reactButton").onclick = recordTime;
 function startTime() {
+    let randomCountDown = Math.round(Math.random() * (10 - 2) + 2)
     for(let i=0;i<randomCountDown;i++){
                 setTimeout(function () {
                     document.getElementById("count").innerHTML = "Count: " + i;
